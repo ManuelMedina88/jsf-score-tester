@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+        <link href="assets/styles/css1.css" rel="stylesheet" type="text/css"/>
+    </h:head>
+    <h:body>
+        <center>
+            <h1 class="title">Welcome to score level determiner</h1>
+            <h:form id="form1">
+                <h:outputText value="Please, enter your score!"/><br/><br/>
+                <label>Score: <h:inputText value="#{receiveScore.score}"/></label><br/><br/>
+                <h:commandButton value="See my level" action="#{processScore.calculateScore()}"/>
+            </h:form>
+        </center>
+    </h:body>
+</html>
+
